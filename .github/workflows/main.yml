@@ -1,4 +1,4 @@
-name: CI for releases
+name: Production CI
 
 on:
   push:
@@ -7,10 +7,11 @@ on:
 
 jobs:
   js-install-and-test:
+    name: Build Test
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [v14.17.4]  
+        node-version: [v16.7]  
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -26,6 +27,7 @@ jobs:
         CI: true
 
   build-and-push-docker-image:
+    name: Build and Push image to DockerHub
     needs: [js-install-and-test]
     runs-on: ubuntu-latest
     steps:
