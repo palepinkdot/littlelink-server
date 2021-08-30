@@ -49,6 +49,7 @@ export const runtimeConfig =
         MICRO_BLOG: window?.env?.MICRO_BLOG,
         FOOTER: window?.env?.FOOTER,
         WHATSAPP: window?.env?.WHATSAPP,
+        STRAVA: window?.env?.STRAVA,
       }
     : {
         // server
@@ -166,4 +167,7 @@ export const runtimeConfig =
         WHATSAPP: nodeIsProduction
           ? process.env.WHATSAPP
           : process.env.RAZZLE_WHATSAPP,
+        STRAVA: nodeIsProduction
+          ? process.env.STRAVA
+          : process.env.RAZZLE_STRAVA,
       };
