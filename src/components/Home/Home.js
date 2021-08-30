@@ -33,7 +33,7 @@ import microblogLogo from '../../icons/microblog.svg';
 import emailLogo from '../../icons/email.svg';
 import emailAltLogo from '../../icons/email_alt.svg';
 import whatsappLogo from '../../icons/whatsapp.svg';
-import stravaLogo from '../../icons/steam.svg';
+import stravaLogo from '../../icons/strava.svg';
 
 function Home(props) {
   return (
