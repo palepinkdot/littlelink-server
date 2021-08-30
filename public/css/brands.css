@@ -325,3 +325,11 @@ button:hover,
 .button.button-whatsapp:hover,
 .button.button-whatsapp:focus {
   filter: brightness(90%) }
+
+/* Strava */
+.button.button-strava {
+  color: #FFFFFF;
+  background-color: #fd5000 }
+.button.button-strava:hover,
+.button.button-strava:focus {
+  filter: brightness(90%) }
